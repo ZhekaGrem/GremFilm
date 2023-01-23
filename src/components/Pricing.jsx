@@ -2,7 +2,9 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <div>Pricing</div>
+    <div>eyrgerugoeiurgoub
+      fgsoergeoifa-pull-rightergerg\<i class="ergseeh fa-erlang    "></i>
+    </div>
   )
 }
 
