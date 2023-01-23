@@ -2,7 +2,7 @@ import React from 'react'
 
 function Trends() {
   return (
-    <div>Trends</div>
+    <div>test-git-04</div>
   )
 }
 
