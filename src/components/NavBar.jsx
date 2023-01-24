@@ -5,6 +5,7 @@ import Movies from './Movies'
 import TvShows from './TvShows'
 import Trends from './Trends'
 import Pricing from './Pricing'
+import '../Trailers/TrailerMovies.jsx'
 import '../Styles/NavBarStyle.css'
 
 export const Container = React.createContext()
@@ -14,9 +15,9 @@ function NavBar() {
    const [inputValue, setInputValue] = useState('')
 
    return (
-      <Container.Provider value={{ toggle, inputValue }}>
+      <Container.Provider value={{ toggle, inputValue}}>
       <Fragment>
-         <nav className={toggle ? '' : 'navBarColor'}>
+         <nav className={toggle ? '' : 'navBarColor'}> 
             <div className='nav-options'>
                   <h1 id={toggle ? '' : 'heading'}>GREMFILM</h1>
                <NavLink to="" style={({isActive})=> {return{color:isActive? '#fff' : '#EE9B00'}}}>
