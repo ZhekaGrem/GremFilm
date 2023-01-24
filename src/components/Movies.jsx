@@ -6,15 +6,18 @@ import '../Styles/Videos.css'
 import NoImg from './NoImages.png'
 
 function Movies() {
-   const { toggle } = useContext(Container)
+   const { toggle, inputValue } = useContext(Container)
+   const input = inputValue
    const [moviesData, setMoviesData] = useState([])
    const [trailer, setTrailer] = useState(true)
-   const Api = "https://api.themoviedb.org/3/discover/movie"
+   const Shown = input ? 'search' : 'discover'
+   const Api = `https://api.themoviedb.org/3/${Shown}/movie`
    const Images = 'https://image.tmdb.org/t/p/w500'
    const MovieCall = async () => {
       const data = await axios.get(Api, {
          params: {
             api_key: 'b3569063f589b59c445590e812f19e04',
+            query: input,
          }
       })
       const results = data.data.results
@@ -22,7 +25,7 @@ function Movies() {
    }
    useEffect(() => {
       MovieCall()
-   }, [])
+   }, [input])
    return ( 
       <Fragment>
          <div className={toggle ? 'mainBgColor' : 'secondaryBgColor'} >

@@ -14,7 +14,7 @@ function NavBar() {
    const [inputValue, setInputValue] = useState('')
 
    return (
-      <Container.Provider value={{toggle}}>
+      <Container.Provider value={{ toggle, inputValue }}>
       <Fragment>
          <nav className={toggle ? '' : 'navBarColor'}>
             <div className='nav-options'>
@@ -45,9 +45,8 @@ function NavBar() {
          <Routes>
             <Route path='' element={<Movies />} />
             <Route path='TvShows' element={<TvShows />} />
-            <Route path='Pricing' element={<Pricing />} />
             <Route path='Trends' element={<Trends />} />
-
+            <Route path='Pricing' element={<Pricing />} />
 
          </Routes>
       </Fragment>
