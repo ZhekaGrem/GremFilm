@@ -1,4 +1,48 @@
 
+.backgroun-Color-Main {
+   width: 100vw;
+   height: 91vh;
+   background-color: #0c1e25;
+   padding-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.backgroun-Color-secondary {
+   width: 100vw;
+   height: 91vh;
+   background-color: #fff;
+   padding-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Pricing-container {
+   display: flex;
+   color: #fff;
+}
+
+.Pricing-option1,
+.Pricing-option2,
+.Pricing-option3 {
+   width: 30vw;
+   height: 63vh;
+   background-color: #000d13;
+   margin-right: 20px;
+   border-radius: 16px;
+}
+
+.light-Theme1,
+.light-Theme2,
+.light-Theme3 {
+   width: 30vw;
+   height: 63vh;
+   background-color: #29534e;
+   margin-right: 20px;
+   border-radius: 16px;
+}
 
 .Pricing-option1 h3,
 .Pricing-option2 h3,
@@ -91,7 +135,7 @@ button:hover {
 }
 
 #button1 {
-   margin-top: 98px;
+   margin-top: 50px;
 }
 
 #button2 {
