@@ -7,7 +7,7 @@ nav {
 }
 
 nav h1 {
-   color: #fff;
+   color: #f0ffb9;
    margin-left: 40px;
 }
 
@@ -40,7 +40,7 @@ span #HomeLight:hover,
 #TrendingLight:hover,
 #PricingLight:hover {
    
-   border-bottom: 2px solid #ff206e;
+   border-bottom: 2px solid rgb(251, 255, 0);
 }
 
 #navBarColor {
@@ -53,12 +53,25 @@ span #HomeLight:hover,
    align-items: center;
 }
 
-#heading {
-   color: #ff206e;
+#literThemeText{
+   color: rgb(39, 39, 252);
 }
 
+#heading {
+   
+   color: #ff0000d0;
+}
+
+#color-blue {
+   background-color: rgb(39, 39, 252);
+}
+#color-red{
+   background-color: #ff0000d0;
+}
+
+
 #navBarColor span:hover {
-   border-bottom: 2px solid #ff206e;
+   border-bottom: 2px solid rgb(39, 39, 252);
    padding-bottom: 5px;
 }
 
@@ -69,10 +82,10 @@ span #HomeLight:hover,
 
 #Color-switcher {
    position: relative;
-   margin-right: 40px;
+   margin-right: 20px;
    background-color: #413E44;
-   width: 80px;
-   height: 40px;
+   width: 60px;
+   height: 22px;
    border-radius: 20px;
 }
 
@@ -81,8 +94,8 @@ span #HomeLight:hover,
    left: 5px;
    top: 4px;
    background-color: #fff;
-   width: 33px;
-   height: 33px;
+   width: 15px;
+   height: 15px;
    border-radius: 50%;
    transition: .6s;
 }
@@ -92,15 +105,15 @@ span #HomeLight:hover,
    background-color: #fff;
    left: 40px;
    top: 4px;
-   width: 33px;
-   height: 33px;
+   width: 15px;
+   height: 15px;
    border-radius: 50%;
    transition: .6s;
 }
 
 .input-group input {
    position: relative;
-   width: 323px;
+   width: 330px;
    height: 4vh;
    border-radius: 16px;
    border: none;
@@ -110,11 +123,11 @@ span #HomeLight:hover,
 .input-group input[type='text'] {
    padding-left: 17px;
    font-size: 1rem;
-   color: black;
+   color: #EE9B00;
 }
 
 .input-group input::placeholder {
-   color: black;
+   color: #EE9B00;
 }
 
 .input-group input:focus {
@@ -124,4 +137,8 @@ span #HomeLight:hover,
 #search {
    position: absolute;
    margin-left: 310px;
+}
+
+.user{
+   margin-right: 22px;
 }

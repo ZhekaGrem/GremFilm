@@ -23,8 +23,10 @@ function Pricing() {
                   <span><FcCheckmark fontSize={25} id="checkmark" />"Ultimet Films and tv programmes" </span>
                   <span><FcCheckmark fontSize={25} id="checkmark" />"Whatch on mobile and tablet"</span>
                   <span><FcCheckmark fontSize={25} id="checkmark" />"Cancel at anytime"</span>
-                  <span><FcCheckmark fontSize={25} id="checkmark" />"First month completely free"</span>
-                  <button id="button1" >Buy now</button>
+                  <span><FcCheckmark fontSize={25} id="checkmark" />
+                  "First month completely free" </span>
+                  <a href="#fakeLink" class="btn red block">Buy now</a>
+
                   <div id='darktheme'>
                      <div className='Pricing-yearly-darktheme' onClick={() => {
                         setToggleBasik(!toggleBasik)
@@ -66,18 +68,19 @@ function Pricing() {
                   </div>
                </div>
 
-               <div className={toggle ? 'Pricing-option3' : 'light-Theme3'}>
+               < div className={toggle ? 'Pricing-option3' : 'light-Theme3'}>
                   <h2>Premium</h2>
                   <div className='Price' >
                      <h3>{premiumCost}</h3>
                      <h4 id='MonthlyYearly'>{togglePremium ? '/Monthly' : '/Yearly'}</h4>
                   </div>
-                  <span><FcCheckmark fontSize={25} id="checkmark" />"Ultimet Films and tv programmes" </span>
-                  <span><FcCheckmark fontSize={25} id="checkmark" />"Whatch on mobile and tablet"</span>
-                  <span><FcCheckmark fontSize={25} id="checkmark" />"Cancel at anytime"</span>
-                  <span><FcCheckmark fontSize={25} id="checkmark" />"First month completely free"</span>
-                  <button id="button3" >Buy now</button>
-                  <div id='darktheme'>
+                  
+                     <span><FcCheckmark fontSize={25} id="checkmark" />"Ultimet Films and tv programmes" </span>
+                     <span><FcCheckmark fontSize={25} id="checkmark" />"Whatch on mobile and tablet"</span>
+                     <span><FcCheckmark fontSize={25} id="checkmark" />"Cancel at anytime"</span>
+                     <span><FcCheckmark fontSize={25} id="checkmark" />"First month completely free"</span>
+                  <a href="#fakeLink" class="btn red block">Buy now</a>
+                                    <div id='darktheme'>
                      <div className='Pricing-yearly-darktheme' onClick={() => {
                         setTogglePremium(!togglePremium)
                         if (togglePremium) {
